@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>iPortfolio Bootstrap Template - Index</title>
+  <title>Kamal Dastan</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -23,7 +23,55 @@
 img{
   max-width: 100%;
   width: 500px;  // assume this is the default size
+
+
 }
+  @keyframes marquee {
+  0% {
+    margin-left: 100%;
+    transform: translateX(0%);
+  }
+  100% {
+    margin-left: 0;
+    transform: translateX(-100%);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.marquee {
+/*   overflow: hidden; */
+}
+
+.marquee-content {
+  display: flex;
+  animation: scrolling 10s linear infinite;
+}
+
+.marquee-item {
+  flex: 0 0 16vw;
+  margin: 0 1vw;
+/*   flex: 0 0 20vw; */
+/*   margin: 0 2vw; */
+}
+
+.marquee-item img {
+  display: block;
+  width: 100%;
+/*   padding: 0 20px; */
+}
+
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translatex(-50vw); }
+}
+
 </style>
 
   <!-- Vendor CSS Files -->
@@ -59,10 +107,12 @@ img{
       <div class="profile">
         <img src="assets/img/kamal.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">KAMAL DASTAN</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-youtube"></i></a>
+<div class="social-links mt-3 text-center">
+          <a href="https://www.facebook.com/profile.php?id=100011433636747&mibextid=LQQJ4d" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://instagram.com/kamal__dastan?igshid=MzRlODBiNWFlZA==" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://youtube.com/@kamaldastan718?si=7sVxjmJWKz_R5MpT" class="youtube"><i class="bx bxl-youtube"></i></a>
+          <a href="https://wa.me/9647707709005" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+
         </div>
       </div>
 
@@ -90,87 +140,87 @@ img{
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
-        <div class="slider-container">
-          <div class="slider" style="display:flex; flex-wrap: wrap;">
-              <div class="slide">
+        <div class="marquee">
+          <div class="marquee-content" >
+              <div class="marquee-item">
                   <img src="20.jpg" alt="Image 1">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="21.jpg" alt="Image 2">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="22.jpg" alt="Image 3">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="23.jpg" alt="Image 1">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="24.jpg" alt="Image 2">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="25.jpg" alt="Image 3">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="26.jpg" alt="Image 1">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="27.jpg" alt="Image 2">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="1.JPG" alt="Image 99">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="2.JPG" alt="Image 2">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="3.JPG" alt="Image 3">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="4.JPG" alt="Image 1">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="5.JPG" alt="Image 2">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="6.JPG" alt="Image 3">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="7.JPG" alt="Image 1">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="8.JPG" alt="Image 2">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="9.JPG" alt="Image 3">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="29.jpg" alt="Image 1">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="30.jpg" alt="Image 2">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="12.JPG" alt="Image 3">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="13.JPG" alt="Image 1">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="14.JPG" alt="Image 2">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="15.JPG" alt="Image 3">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="16.JPG" alt="Image 1">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="28.jpg" alt="Image 2">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="18.JPG" alt="Image 3">
               </div>
-              <div class="slide">
+              <div class="marquee-item">
                   <img src="19.JPG" alt="Image 3">
               </div>
           </div>
